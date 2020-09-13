@@ -2,7 +2,7 @@
 
 import cv2
 
-faces_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml') # We load the cascade for the face.
+faces_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml') # We will load the cascade for the face.
 eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml') # We load the cascade for the eyes.
 
 def detect(gray, frame): # We create a function that takes as input the image in black and white (gray) and the original image (frame), and that will return the same image with the detector rectangles. 
